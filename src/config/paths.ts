@@ -35,5 +35,17 @@ export const paths = {
       path: 'app/profile',
       getHref: () => '/app/profile',
     },
+    jobCategories: {
+      path: 'app/jobCategories',
+      getHref: () => '/app/jobCategories',
+    },
+    creationForm: {
+      path: 'app/creationForm',
+      getHref: () => '/app/creationForm',
+    },
+    approvalStatus: {
+      path: 'app/approvalStatus',
+      getHref: () => '/app/approvalStatus',
+    },
   },
 } as const;

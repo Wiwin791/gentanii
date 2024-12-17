@@ -81,8 +81,20 @@ export function DashboardLayout({ children }: { children: React.ReactNode }) {
   const navigation = [
     { name: 'Dashboard', to: paths.app.dashboard.getHref() },
     {
-      name: 'standard-work',
+      name: 'Standard Work',
       to: paths.app.standardWork.getHref(),
+    },
+    {
+      name: 'Job Categories',
+      to: paths.app.jobCategories.getHref(),
+    },
+    {
+      name: 'Creation Form',
+      to: paths.app.creationForm.getHref(),
+    },
+    {
+      name: 'Approval Status',
+      to: paths.app.approvalStatus.getHref(),
     },
   ].filter(Boolean) as SideNavigationItem[];
 

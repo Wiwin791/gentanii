@@ -70,6 +70,36 @@ export const createAppRouter = () =>
           },
           ErrorBoundary: AppRootErrorBoundary,
         },
+        {
+          path: paths.app.jobCategories.path,
+          lazy: async () => {
+            const { JobCategoriesTable } = await import('./routes/app/jobCategories');
+            return {
+              Component: JobCategoriesTable,
+            };
+          },
+          ErrorBoundary: AppRootErrorBoundary,
+        },
+        {
+          path: paths.app.creationForm.path,
+          lazy: async () => {
+            const { CreationForm } = await import('./routes/app/creationForm');
+            return {
+              Component: CreationForm,
+            };
+          },
+          ErrorBoundary: AppRootErrorBoundary,
+        },
+        {
+          path: paths.app.approvalStatus.path,
+          lazy: async () => {
+            const { ApprovalStatus } = await import('./routes/app/approvalStatus');
+            return {
+              Component: ApprovalStatus,
+            };
+          },
+          ErrorBoundary: AppRootErrorBoundary,
+        },
       ],
     },
     {
